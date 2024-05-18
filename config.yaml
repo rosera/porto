@@ -1,4 +1,17 @@
 services:
   - endpoint: test
-    comment: "test endpoint" 
-    default: "<h1>Test endpoint</h1>\n<p>This is a test message</p>" 
+    comment: "test endpoint"
+    default: "<h1>Test endpoint</h1>\n<p>This is a test</p>"
+    format: "html"
+  - endpoint: json-test
+    comment: "JSON test endpoint"
+    default: "{\"message\": \"Hello JSON Test endpoint\"}"
+    format: "json"
+  - endpoint: plain-test
+    comment: "Plain text test endpoint"
+    default: "Hello Plain Text Test endpoint"
+    format: "plain"
+  - endpoint: image-test
+    comment: "Image test endpoint"
+    default: "https://via.placeholder.com/150"
+    format: "image"
