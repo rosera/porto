@@ -1,0 +1,4 @@
+services:
+  - endpoint: test
+    comment: "test endpoint" 
+    default: "<h1>Test endpoint</h1>\n<p>This is a test message</p>" 
